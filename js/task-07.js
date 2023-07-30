@@ -1,10 +1,10 @@
 const fontSizeControl = document.querySelector("#font-size-control");
-const ChangedText = document.querySelector("#text");
+const changedText = document.querySelector("#text");
 
 fontSizeControl.addEventListener("input", onInputFontSize);
 
+// функція зміни розміру тексту за значенням "ползунку"
 function onInputFontSize(evt) {
-    const fonttest = evt.currentTarget.value;
-    console.log(`"${fonttest}px"`);
-    ChangedText.style.fontSize = `"${fonttest}px"`;
+    const fontSize = evt.currentTarget.value;
+    changedText.style.fontSize = `${fontSize}px`;
 }

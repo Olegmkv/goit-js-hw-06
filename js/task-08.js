@@ -2,6 +2,7 @@ const loginForm = document.querySelector(".login-form");
 
 loginForm.addEventListener("submit", onSubmitLoginForm)
 
+//функція обробки форми "логіну"
 function onSubmitLoginForm(evt) {
     evt.preventDefault();
     //перевірка на валідність

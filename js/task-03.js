@@ -15,10 +15,15 @@ const images = [
 
 const markingGallery = document.querySelector(".gallery");
 
+// формування масиву ромітки елементів списку
 const markingImages = images.map(({ url, alt }) => {
-  return `<li><img src="${url}" alt="${alt}" width="300" /></li>`
+  return `<li><img src="${url}" alt="${alt}" width="500" /></li>`
 }) 
 
+// заміна стилів
+markingGallery.style.listStyle = "none";
 markingGallery.style.display = "flex";
 markingGallery.style.gap = "30px"; 
+
+// додавння розмінки в DOM одним рядком 
 markingGallery.insertAdjacentHTML("afterbegin", markingImages.join(""));

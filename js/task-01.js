@@ -1,5 +1,8 @@
 const listCategories = document.querySelectorAll("#categories > li");
-console.log('Number of categories: ',listCategories.length);
+// підраховуємо кількісь списків
+console.log('Number of categories: ', listCategories.length);
+
+// для кохного списку підраховуємо кількість елементів
 listCategories.forEach(category => {
     console.log("");
     console.log('Category: ',category.children[0].innerText);
