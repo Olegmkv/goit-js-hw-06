@@ -6,7 +6,7 @@ const validLength = Number(inputText.dataset.length);
 //функція візульного відображення валідації довжини введеного тексту 
 function onBlurInputText(evt) {
     const inputTextLength = evt.currentTarget.value.length;
-    if (inputTextLength < validLength) {
+    if (inputTextLength === 0) {
         inputText.classList.remove("valid");
         inputText.classList.remove("invalid");
     } else if (inputTextLength === validLength) {
